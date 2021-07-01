@@ -697,8 +697,8 @@ class BaseWizard(Logger):
         self.show_xpub_dialog(xpub=xpub, run_next=lambda x: self.run('choose_keystore'))
 
     def choose_seed_type(self):
-        seed_type = 'standard' if self.config.get('nosegwit') else 'segwit'
-        self.create_seed(seed_type)
+        seed_type = 'bip39'
+        self.create_seed_bip39(seed_type)
 
     def create_seed(self, seed_type):
         from . import mnemonic
@@ -708,6 +708,17 @@ class BaseWizard(Logger):
         self.opt_ext = True
         self.opt_slip39 = False
         f = lambda x: self.request_passphrase(seed, x)
+        self.show_seed_dialog(run_next=f, seed_text=seed)
+
+    def create_seed_bip39(self, seed_type):
+        from . import mnemonic_bip39
+        self.seed_type = seed_type
+        mnemo = mnemonic_bip39.Mnemonic('english')
+        seed = mnemo.generate(strength=128)
+        self.opt_bip39 = True
+        self.opt_ext = True
+        self.opt_slip39 = False
+        f = lambda x: self.restore_from_seed()
         self.show_seed_dialog(run_next=f, seed_text=seed)
 
     def request_passphrase(self, seed, opt_passphrase):

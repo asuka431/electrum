@@ -138,7 +138,7 @@ class SeedLayout(QVBoxLayout):
         self.parent = parent
         self.options = options
         self.config = config
-        self.seed_type = 'electrum'
+        self.seed_type = 'bip39'
         if title:
             self.addWidget(WWLabel(title))
         if seed:  # "read only", we already have the text
