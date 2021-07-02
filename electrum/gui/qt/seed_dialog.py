@@ -90,13 +90,7 @@ class SeedLayout(QVBoxLayout):
                 self.seed_status.setText('')
                 self.on_edit()
                 if self.seed_type == 'bip39':
-                    msg = ' '.join([
-                        '<b>' + _('Warning') + ':</b>  ',
-                        _('BIP39 seeds can be imported in Electrum, so that users can access funds locked in other wallets.'),
-                        _('However, we do not generate BIP39 seeds, because they do not meet our safety standard.'),
-                        _('BIP39 seeds do not include a version number, which compromises compatibility with future software.'),
-                        _('We do not guarantee that BIP39 imports will always be supported in Electrum.'),
-                    ])
+                    msg = ''
                 elif self.seed_type == 'slip39':
                     msg = ' '.join([
                         '<b>' + _('Warning') + ':</b>  ',
@@ -255,6 +249,7 @@ class SeedLayout(QVBoxLayout):
         if self.seed_type == 'bip39':
             from electrum.keystore import bip39_is_checksum_valid
             is_checksum, is_wordlist = bip39_is_checksum_valid(s)
+            b = is_checksum
             status = ('checksum: ' + ('ok' if is_checksum else 'failed')) if is_wordlist else 'unknown wordlist'
             label = 'BIP39' + ' (%s)'%status
         elif self.seed_type == 'slip39':
