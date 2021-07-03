@@ -1,4 +1,4 @@
-# Electrum - lightweight Bitcoin client
+# Electrum - lightweight Fujicoin client
 # Copyright (C) 2012 thomasv@ecdsa.org
 #
 # Permission is hereby granted, free of charge, to any person
@@ -297,6 +297,9 @@ class Blockchain(Logger):
             raise Exception("hash mismatches with expected: {} vs {}".format(expected_header_hash, _hash))
         if prev_hash != header.get('prev_block_hash'):
             raise Exception("prev hash mismatch: %s vs %s" % (prev_hash, header.get('prev_block_hash')))
+        # fujicoin do not check bits and target
+        return
+    
         if constants.net.TESTNET:
             return
         bits = cls.target_to_bits(target)
@@ -485,7 +488,7 @@ class Blockchain(Logger):
         if not header:
             return True
         # note: We check the timestamp only in the latest header.
-        #       The Bitcoin consensus has a lot of leeway here:
+        #       The Fujicoin consensus has a lot of leeway here:
         #       - needs to be greater than the median of the timestamps of the past 11 blocks, and
         #       - up to at most 2 hours into the future compared to local clock
         #       so there is ~2 hours of leeway in either direction
@@ -514,6 +517,9 @@ class Blockchain(Logger):
             return hash_header(header)
 
     def get_target(self, index: int) -> int:
+        # fujicoin do not check target
+        return 0
+    
         # compute target from chunk x, used in chunk x+1
         if constants.net.TESTNET:
             return 0
@@ -530,7 +536,7 @@ class Blockchain(Logger):
         bits = last.get('bits')
         target = self.bits_to_target(bits)
         nActualTimespan = last.get('timestamp') - first.get('timestamp')
-        nTargetTimespan = 14 * 24 * 60 * 60
+        nTargetTimespan = 1.4 * 24 * 60 * 60
         nActualTimespan = max(nActualTimespan, nTargetTimespan // 4)
         nActualTimespan = min(nActualTimespan, nTargetTimespan * 4)
         new_target = min(MAX_TARGET, (target * nActualTimespan) // nTargetTimespan)
@@ -570,6 +576,9 @@ class Blockchain(Logger):
     def get_chainwork(self, height=None) -> int:
         if height is None:
             height = max(0, self.height())
+        # fujicoin do not check chainwork
+        return height
+    
         if constants.net.TESTNET:
             # On testnet/regtest, difficulty works somewhat different.
             # It's out of scope to properly implement that.

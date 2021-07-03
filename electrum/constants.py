@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Electrum - lightweight Bitcoin client
+# Electrum - lightweight Fujicoin client
 # Copyright (C) 2018 The Electrum developers
 #
 # Permission is hereby granted, free of charge, to any person
@@ -72,16 +72,16 @@ class BitcoinMainnet(AbstractNet):
 
     NET_NAME = "mainnet"
     TESTNET = False
-    WIF_PREFIX = 0x80
-    ADDRTYPE_P2PKH = 0
-    ADDRTYPE_P2SH = 5
-    SEGWIT_HRP = "bc"
+    WIF_PREFIX = 164
+    ADDRTYPE_P2PKH = 36
+    ADDRTYPE_P2SH = 16
+    SEGWIT_HRP = "fc"
     BOLT11_HRP = SEGWIT_HRP
-    GENESIS = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
+    GENESIS = "adb6d9cfd74075e7f91608add4bd2a2ea636f70856183086842667a1597714a0"
     DEFAULT_PORTS = {'t': '50001', 's': '50002'}
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
-    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 497000
+    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 3000000
 
     XPRV_HEADERS = {
         'standard':    0x0488ade4,  # xprv
@@ -99,12 +99,9 @@ class BitcoinMainnet(AbstractNet):
         'p2wsh':       0x02aa7ed3,  # Zpub
     }
     XPUB_HEADERS_INV = inv_dict(XPUB_HEADERS)
-    BIP44_COIN_TYPE = 0
+    BIP44_COIN_TYPE = 75
     LN_REALM_BYTE = 0
     LN_DNS_SEEDS = [
-        'nodes.lightning.directory.',
-        'lseed.bitcoinstats.com.',
-        'lseed.darosior.ninja',
     ]
 
 
