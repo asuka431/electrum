@@ -38,7 +38,7 @@ msgid "&Addresses"
 msgstr "アドレス"
 
 #: electrum/gui/qt/main_window.py:775
-msgid "&Bitcoin Paper"
+msgid "&Fujicoin Paper"
 msgstr "ビットコインの元論文(ホワイトペーパー)(&B)"
 
 #: electrum/gui/qt/main_window.py:770
@@ -480,7 +480,7 @@ msgstr "アラビア語"
 #: electrum/plugins/keepkey/qt.py:412 electrum/plugins/safe_t/qt.py:322
 #: electrum/plugins/trezor/qt.py:588
 msgid "Are you SURE you want to wipe the device?\n"
-"Your wallet still has bitcoins in it!"
+"Your wallet still has fujicoins in it!"
 msgstr "デバイスを本当に消去しても大丈夫ですか？\n"
 "あなたのウォレットにはまだビットコインが入っています!"
 
@@ -577,20 +577,20 @@ msgid "BIP70 invoice saved as {}"
 msgstr "BIP70の請求書は{}として保存されました"
 
 #: electrum/gui/qt/history_list.py:596
-msgid "BTC Fiat price"
-msgstr "BTCの法定通貨の価格"
+msgid "FJC Fiat price"
+msgstr "FJCの法定通貨の価格"
 
 #: electrum/gui/qt/history_list.py:592
-msgid "BTC balance"
-msgstr "BTC残高"
+msgid "FJC balance"
+msgstr "FJC残高"
 
 #: electrum/gui/qt/history_list.py:613
-msgid "BTC incoming"
-msgstr "入金BTC"
+msgid "FJC incoming"
+msgstr "入金FJC"
 
 #: electrum/gui/qt/history_list.py:617
-msgid "BTC outgoing"
-msgstr "出金BTC"
+msgid "FJC outgoing"
+msgstr "出金FJC"
 
 #: electrum/gui/qt/installwizard.py:103 electrum/gui/qt/installwizard.py:163
 #: electrum/gui/qt/installwizard.py:164
@@ -666,15 +666,15 @@ msgid "BitBox02 Status"
 msgstr "BitBox02の状態"
 
 #: electrum/gui/kivy/uix/ui_screens/receive.kv:95
-msgid "Bitcoin Address"
+msgid "Fujicoin Address"
 msgstr "ビットコインアドレス"
 
 #: electrum/gui/qt/main_window.py:1511
-msgid "Bitcoin Address is None"
+msgid "Fujicoin Address is None"
 msgstr "ビットコインアドレスがありません"
 
 #: electrum/gui/qt/confirm_tx_dialog.py:142
-msgid "Bitcoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
+msgid "Fujicoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
 msgstr "一般的にビットコインの取引は無料ではありません。送信側に手数料がかかります。"
 
 #: electrum/gui/qt/locktimeedit.py:36
@@ -1665,7 +1665,7 @@ msgid "Device communication error. Please unplug and replug your Digital Bitbox.
 msgstr "デバイス通信エラー: Digital Bitboxを取り外して、再度接続してください。"
 
 #: electrum/plugins/ledger/ledger.py:230
-msgid "Device not in Bitcoin mode"
+msgid "Device not in Fujicoin mode"
 msgstr "デバイスはビットコインモードではありません"
 
 #: electrum/plugins/digitalbitbox/__init__.py:5
@@ -1802,7 +1802,7 @@ msgstr "Electurm プラグイン"
 
 #: electrum/plugin.py:578
 msgid "Electrum cannot pair with your {}.\n\n"
-"Before you request bitcoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all bitcoins you receive will be unspendable."
+"Before you request fujicoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all fujicoins you receive will be unspendable."
 msgstr "Electrumは{}とペアリングできません。\n\n"
 "このウォレットのアドレスにビットコインを送信するようにリクエストする前に、デバイスとペアリングができることを確認してください。もしくは、シード(あればパスフレーズも)が手元にあることを確認してください。さもなくば、これから受け取るすべてのビットコインが利用できなくなるでしょう。"
 
@@ -1860,7 +1860,7 @@ msgid "Electrum will now exit."
 msgstr "Electrumは終了します。"
 
 #: electrum/gui/qt/main_window.py:793
-msgid "Electrum's focus is speed, with low resource usage and simplifying Bitcoin."
+msgid "Electrum's focus is speed, with low resource usage and simplifying Fujicoin."
 msgstr "Electrumの照準はスピード・使用リソース削減・使いやすさの3点に定めています。"
 
 #: electrum/plugins/email_requests/__init__.py:3
@@ -2011,7 +2011,7 @@ msgid "Enter a label to name your device:"
 msgstr "あなたのデバイスの名前としてラベルを入力してください: "
 
 #: electrum/base_wizard.py:230
-msgid "Enter a list of Bitcoin addresses (this will create a watching-only wallet), or a list of private keys."
+msgid "Enter a list of Fujicoin addresses (this will create a watching-only wallet), or a list of private keys."
 msgstr "ビットコインのアドレス又は秘密鍵のリストを入力して下さい。（アドレスの場合は監視専用のウォレットを作ります）"
 
 #: electrum/gui/qt/main_window.py:2092
@@ -2031,7 +2031,7 @@ msgstr "以下に新しいパスワードを入力してください。"
 #: electrum/plugins/keepkey/clientbase.py:70
 #: electrum/plugins/safe_t/clientbase.py:75
 #: electrum/plugins/trezor/clientbase.py:295
-msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the bitcoins in the wallet."
+msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the fujicoins in the wallet."
 msgstr "このウォレットを生成するパスフレーズを入力してください。このウォレットを使う度に、{}があなたにパスフレーズを要求します。パスフレーズを忘れると、ウォレット内のビットコインにアクセスできなくなります。"
 
 #: electrum/gui/qt/main_window.py:3155
@@ -2418,8 +2418,8 @@ msgid "Firmware Version"
 msgstr "ファームウェアバージョン"
 
 #: electrum/plugins/ledger/ledger.py:45
-msgid "Firmware version (or \"Bitcoin\" app) too old for Segwit support. Please update at"
-msgstr "ファームウェアのバージョン(または\"Bitcoin\"のアプリ)が古すぎてセグウィットがサポートされていません。アップデートしてください。"
+msgid "Firmware version (or \"Fujicoin\" app) too old for Segwit support. Please update at"
+msgstr "ファームウェアのバージョン(または\"Fujicoin\"のアプリ)が古すぎてセグウィットがサポートされていません。アップデートしてください。"
 
 #: electrum/plugins/trezor/qt.py:425
 msgid "Firmware version too old."
@@ -2713,8 +2713,8 @@ msgstr "このボックスをチェックすると、あなたの未検証取引
 
 #: electrum/plugins/keepkey/qt.py:529 electrum/plugins/safe_t/qt.py:459
 #: electrum/plugins/trezor/qt.py:725
-msgid "If you disable your PIN, anyone with physical access to your {} device can spend your bitcoins."
-msgstr "もしPINコードが無効化されている場合、物理的にあなたの{} デバイスを持っている誰かがあなたのBitcoinを使用することが出来ます。"
+msgid "If you disable your PIN, anyone with physical access to your {} device can spend your fujicoins."
+msgstr "もしPINコードが無効化されている場合、物理的にあなたの{} デバイスを持っている誰かがあなたのFujicoinを使用することが出来ます。"
 
 #: electrum/base_wizard.py:502
 msgid "If you do not know what this is, leave this field empty."
@@ -2727,7 +2727,7 @@ msgstr "このチャネルを強制クローズすると、チャネル内のあ
 
 #: electrum/plugins/keepkey/qt.py:34 electrum/plugins/safe_t/qt.py:34
 #: electrum/plugins/trezor/qt.py:34
-msgid "If you forget a passphrase you will be unable to access any bitcoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
+msgid "If you forget a passphrase you will be unable to access any fujicoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
 msgstr "パスフレーズを忘れると、ウォレット内のビットコインにはアクセスすることができなくなります。パスフレーズはPINではありません。これを確実に理解している場合のみ変更してください。"
 
 #: electrum/gui/kivy/uix/dialogs/installwizard.py:837
@@ -2795,11 +2795,11 @@ msgid "Import"
 msgstr "インポート"
 
 #: electrum/base_wizard.py:229
-msgid "Import Bitcoin Addresses"
+msgid "Import Fujicoin Addresses"
 msgstr "ビットコインアドレスのインポート"
 
 #: electrum/base_wizard.py:150
-msgid "Import Bitcoin addresses or private keys"
+msgid "Import Fujicoin addresses or private keys"
 msgstr "ビットコインアドレスまたは秘密鍵のインポート"
 
 #: electrum/gui/kivy/main_window.py:1378
@@ -2950,16 +2950,16 @@ msgstr "金額が不正です"
 
 #: electrum/gui/kivy/uix/screens.py:313
 #: electrum/plugins/hw_wallet/plugin.py:128
-msgid "Invalid Bitcoin Address"
+msgid "Invalid Fujicoin Address"
 msgstr "無効なビットコインアドレスです"
 
 #: electrum/gui/stdio.py:175 electrum/gui/text.py:356
-msgid "Invalid Bitcoin address"
+msgid "Invalid Fujicoin address"
 msgstr "無効なビットコインアドレスです"
 
 #: electrum/gui/qt/main_window.py:2648 electrum/gui/qt/main_window.py:2676
 #: electrum/wallet.py:2289
-msgid "Invalid Bitcoin address."
+msgid "Invalid Fujicoin address."
 msgstr "無効なビットコインアドレスです。"
 
 #: electrum/gui/stdio.py:185 electrum/gui/text.py:366
@@ -3282,7 +3282,7 @@ msgid "Make sure you install it with python3"
 msgstr "python3を使ってインストールしていることを確認してください"
 
 #: electrum/gui/qt/main_window.py:562
-msgid "Make sure you own the seed phrase or the private keys, before you request Bitcoins to be sent to this wallet."
+msgid "Make sure you own the seed phrase or the private keys, before you request Fujicoins to be sent to this wallet."
 msgstr "このウォレットへのビットコインの送金を請求する場合は、あなたがシードや秘密鍵を持っているか確認して下さい。"
 
 #: electrum/plugins/coldcard/qt.py:143
@@ -3717,7 +3717,7 @@ msgstr "単一のサーバーのみに接続する"
 
 #: electrum/plugins/keepkey/qt.py:554 electrum/plugins/safe_t/qt.py:484
 #: electrum/plugins/trezor/qt.py:750
-msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the bitcoins will be lost forever."
+msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the fujicoins will be lost forever."
 msgstr "リカバリ用シードを書き留めて、デバイス内のウォレットが空になっている状態であることを確認してからデバイスを消去してください。さもなくば、ビットコインは永久に失われるでしょう。"
 
 #: electrum/gui/qt/channels_list.py:352 electrum/gui/qt/channels_list.py:388
@@ -3819,7 +3819,7 @@ msgstr "PINが更新されていません"
 
 #: electrum/plugins/keepkey/qt.py:486 electrum/plugins/safe_t/qt.py:393
 #: electrum/plugins/trezor/qt.py:659
-msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your bitcoins if they obtain physical access to your {}."
+msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your fujicoins if they obtain physical access to your {}."
 msgstr "PINによる保護が強く推奨されます。あなたの{}が物理的に誰かに盗まれたとき、PINはあなたのビットコインを守る唯一の保護手段です。"
 
 #: electrum/plugins/keepkey/qt.py:444 electrum/plugins/safe_t/qt.py:352
@@ -4095,7 +4095,7 @@ msgid "Please save these {0} words on paper (order is important). "
 msgstr "この{0}個の単語を順番通りに紙に記録して下さい。"
 
 #: electrum/gui/kivy/uix/screens.py:291
-msgid "Please scan a Bitcoin address or a payment request"
+msgid "Please scan a Fujicoin address or a payment request"
 msgstr "ビットコインのアドレスか支払いリクエストをスキャンしてください"
 
 #: electrum/gui/qt/main_window.py:616
@@ -4396,7 +4396,7 @@ msgstr "受け取り先が指定されていません。"
 
 #: electrum/gui/qt/main_window.py:1355
 msgid "Recipient of the funds."
-msgstr "Bitcoinの送信先のアドレスです。"
+msgstr "Fujicoinの送信先のアドレスです。"
 
 #: electrum/plugins/keepkey/keepkey.py:217
 #: electrum/plugins/safe_t/safe_t.py:175 electrum/plugins/trezor/trezor.py:217
@@ -4866,7 +4866,7 @@ msgid "Shamir"
 msgstr "シャミア"
 
 #: electrum/gui/kivy/uix/dialogs/request_dialog.py:134
-msgid "Share Bitcoin Request"
+msgid "Share Fujicoin Request"
 msgstr "ビットコインリクエストを共有"
 
 #: electrum/gui/kivy/uix/dialogs/invoice_dialog.py:126
@@ -5063,7 +5063,7 @@ msgid "Standard wallet"
 msgstr "スタンダードウォレット"
 
 #: electrum/gui/qt/main_window.py:796
-msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Bitcoin system."
+msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Fujicoin system."
 msgstr "起動時間は一瞬に限りなく近く、その裏にはたくさんの高性能サーバがあり、それらによりビットコインネットワークの最新状況をスピーディー且つ低負荷でお届けします。"
 
 #: electrum/gui/qt/channel_details.py:173
@@ -5182,8 +5182,8 @@ msgid "Testnet coins are worthless."
 msgstr "テストネットのコインは無価値です。"
 
 #: electrum/gui/qt/main_window.py:579
-msgid "Testnet is separate from the main Bitcoin network. It is used for testing."
-msgstr "テストネットはメインのBitcoinネットワークとは別のものです。テストに使用されます。"
+msgid "Testnet is separate from the main Fujicoin network. It is used for testing."
+msgstr "テストネットはメインのFujicoinネットワークとは別のものです。テストに使用されます。"
 
 #: electrum/gui/qt/util.py:839 electrum/gui/qt/main_window.py:1289
 #: electrum/gui/qt/qrcodewidget.py:148
@@ -5234,7 +5234,7 @@ msgid "The amount will be displayed in red if you do not have enough funds in yo
 msgstr "残高不足の場合、数字が赤字として表示されます。"
 
 #: electrum/gui/qt/main_window.py:1100
-msgid "The bitcoin address never expires and will always be part of this electrum wallet."
+msgid "The fujicoin address never expires and will always be part of this electrum wallet."
 msgstr "アドレス自体は永久にElectrumウォレットと共にあるので、期限切れとなることはありません。"
 
 #: electrum/gui/qt/channels_list.py:520
@@ -5467,7 +5467,7 @@ msgid "This may result in higher transactions fees."
 msgstr "高額な送金手数料となるかもしれません"
 
 #: electrum/gui/qt/main_window.py:561
-msgid "This means you will not be able to spend Bitcoins with it."
+msgid "This means you will not be able to spend Fujicoins with it."
 msgstr "このことは、このウォレットのビットコインを使用することが出来ないことを意味します。"
 
 #: electrum/gui/qt/settings_dialog.py:335
@@ -5686,10 +5686,10 @@ msgstr "トランザクションはすでに保存されているか、まだ署
 #: electrum/network.py:927
 msgid "Transaction could not be broadcast due to dust outputs.\n"
 "Some of the outputs are too small in value, probably lower than 1000 satoshis.\n"
-"Check the units, make sure you haven't confused e.g. mBTC and BTC."
+"Check the units, make sure you haven't confused e.g. mFJC and FJC."
 msgstr "トランザクションはダストアウトプットのためにブロードキャストすることができませんでした。\n"
 "一部のアウトプットの値が小さすぎます（おそらく1000サトシ未満でしょう）。\n"
-"単位を混乱してないことを確認してください。例えばmBTCとBTCなど。"
+"単位を混乱してないことを確認してください。例えばmFJCとFJCなど。"
 
 #: electrum/gui/qt/main_window.py:3417
 msgid "Transaction could not be saved."
@@ -6340,7 +6340,7 @@ msgid "You can override the suggested derivation path."
 msgstr "規定のパスを書き換え可能です。"
 
 #: electrum/gui/qt/main_window.py:1101
-msgid "You can reuse a bitcoin address any number of times but it is not good for your privacy."
+msgid "You can reuse a fujicoin address any number of times but it is not good for your privacy."
 msgstr "ビットコインのアドレスは何回でも使い回すことができますが、あなたのプライバシーのためには好ましくありません。"
 
 #: electrum/plugins/safe_t/qt.py:414 electrum/plugins/trezor/qt.py:680
@@ -6373,7 +6373,7 @@ msgid "You have {n} open channels."
 msgstr "{n}のオープン済みチャネルがあります。"
 
 #: electrum/gui/qt/main_window.py:1356
-msgid "You may enter a Bitcoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a Bitcoin address)"
+msgid "You may enter a Fujicoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a Fujicoin address)"
 msgstr "入力形式には、ビットコインアドレス、アドレス帳のラベル(候補が表示されます)、エイリアス(メールアドレスのような形式のビットコインアドレス)が使えます。"
 
 #: electrum/base_wizard.py:497
@@ -6423,7 +6423,7 @@ msgstr "送金額"
 
 #: electrum/plugins/keepkey/qt.py:31 electrum/plugins/safe_t/qt.py:31
 #: electrum/plugins/trezor/qt.py:31
-msgid "You should enable PIN protection.  Your PIN is the only protection for your bitcoins if your device is lost or stolen."
+msgid "You should enable PIN protection.  Your PIN is the only protection for your fujicoins if your device is lost or stolen."
 msgstr "PINプロテクションを有効にすべきです。もしあなたのデバイスを紛失した時にあなたのビットコインを守ってくれるのはPINだけです。"
 
 #: electrum/plugins/safe_t/safe_t.py:212 electrum/plugins/trezor/trezor.py:250
@@ -6445,7 +6445,7 @@ msgid "Your accounts have been moved to"
 msgstr "あなたのアカウントは次の場所に移動しました"
 
 #: electrum/gui/qt/password_dialog.py:256
-msgid "Your bitcoins are password protected. However, your wallet file is not encrypted."
+msgid "Your fujicoins are password protected. However, your wallet file is not encrypted."
 msgstr "あなたのビットコインはパスワードで保護されていますが、ウォレットファイルは暗号化されていません。"
 
 #: electrum/gui/qt/main_window.py:2475 electrum/gui/kivy/main_window.py:1411
@@ -6496,7 +6496,7 @@ msgid "Your server is on branch"
 msgstr "接続しているサーバーは分岐したブロックチェーン上にいます"
 
 #: electrum/network.py:1011
-msgid "Your transaction is paying a fee that is so low that the bitcoin node cannot fit it into its mempool. The mempool is already full of hundreds of megabytes of transactions that all pay higher fees. Try to increase the fee."
+msgid "Your transaction is paying a fee that is so low that the fujicoin node cannot fit it into its mempool. The mempool is already full of hundreds of megabytes of transactions that all pay higher fees. Try to increase the fee."
 msgstr "あなたのトランザクション支払い手数料は低すぎるため、ビットコインノードのトランザクションプール内に収まりません。トランザクションプールには既に数百メガバイトものトランザクションがあり、それらはより高額な手数料を支払おうとしています。手数料を増やしてみてください。"
 
 #: electrum/network.py:1020

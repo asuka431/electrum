@@ -38,7 +38,7 @@ msgid "&Addresses"
 msgstr "&Címek"
 
 #: electrum/gui/qt/main_window.py:775
-msgid "&Bitcoin Paper"
+msgid "&Fujicoin Paper"
 msgstr ""
 
 #: electrum/gui/qt/main_window.py:770
@@ -480,9 +480,9 @@ msgstr "Arab"
 #: electrum/plugins/keepkey/qt.py:412 electrum/plugins/safe_t/qt.py:322
 #: electrum/plugins/trezor/qt.py:588
 msgid "Are you SURE you want to wipe the device?\n"
-"Your wallet still has bitcoins in it!"
+"Your wallet still has fujicoins in it!"
 msgstr "Biztosan törölni szeretnéd az eszközt?\n"
-"A pénztárcádban még van bitcoin!"
+"A pénztárcádban még van fujicoin!"
 
 #: electrum/gui/qt/channels_list.py:168
 #: electrum/gui/kivy/uix/dialogs/lightning_channels.py:534
@@ -577,19 +577,19 @@ msgid "BIP70 invoice saved as {}"
 msgstr "BIP70 számla mentve mint {}"
 
 #: electrum/gui/qt/history_list.py:596
-msgid "BTC Fiat price"
+msgid "FJC Fiat price"
 msgstr ""
 
 #: electrum/gui/qt/history_list.py:592
-msgid "BTC balance"
+msgid "FJC balance"
 msgstr ""
 
 #: electrum/gui/qt/history_list.py:613
-msgid "BTC incoming"
+msgid "FJC incoming"
 msgstr ""
 
 #: electrum/gui/qt/history_list.py:617
-msgid "BTC outgoing"
+msgid "FJC outgoing"
 msgstr ""
 
 #: electrum/gui/qt/installwizard.py:103 electrum/gui/qt/installwizard.py:163
@@ -666,16 +666,16 @@ msgid "BitBox02 Status"
 msgstr "BitBox02 Státusz"
 
 #: electrum/gui/kivy/uix/ui_screens/receive.kv:95
-msgid "Bitcoin Address"
-msgstr "Bitcoin cím"
+msgid "Fujicoin Address"
+msgstr "Fujicoin cím"
 
 #: electrum/gui/qt/main_window.py:1511
-msgid "Bitcoin Address is None"
+msgid "Fujicoin Address is None"
 msgstr "Ez a cím nem létezik"
 
 #: electrum/gui/qt/confirm_tx_dialog.py:142
-msgid "Bitcoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
-msgstr "A Bitcoin tranzakciók nem ingyenesek. A tranzakciós díjat a pénz küldője fizeti ki."
+msgid "Fujicoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
+msgstr "A Fujicoin tranzakciók nem ingyenesek. A tranzakciós díjat a pénz küldője fizeti ki."
 
 #: electrum/gui/qt/locktimeedit.py:36
 msgid "Block height"
@@ -1381,7 +1381,7 @@ msgstr "Másolás és bezárás"
 
 #: electrum/gui/kivy/uix/ui_screens/send.kv:97
 msgid "Copy and paste the recipient address using the Paste button, or use the camera to scan a QR code."
-msgstr "Illeszd be a címzett Bitcoin címét a Beillesztés gomb segítségével, vagy használd a fényképezőgépet egy QR-kód beolvasásához."
+msgstr "Illeszd be a címzett Fujicoin címét a Beillesztés gomb segítségével, vagy használd a fényképezőgépet egy QR-kód beolvasásához."
 
 #: electrum/gui/qt/util.py:835 electrum/gui/qt/transaction_dialog.py:273
 msgid "Copy to clipboard"
@@ -1665,8 +1665,8 @@ msgid "Device communication error. Please unplug and replug your Digital Bitbox.
 msgstr "Eszközkommunikációs hiba. Kérjük, húzd ki és dugd be újra a Digital Bitbox-ot."
 
 #: electrum/plugins/ledger/ledger.py:230
-msgid "Device not in Bitcoin mode"
-msgstr "Az eszköz nem Bitcoin üzemmódban van"
+msgid "Device not in Fujicoin mode"
+msgstr "Az eszköz nem Fujicoin üzemmódban van"
 
 #: electrum/plugins/digitalbitbox/__init__.py:5
 msgid "Digital Bitbox wallet"
@@ -1802,13 +1802,13 @@ msgstr "Electrum Pluginek"
 
 #: electrum/plugin.py:578
 msgid "Electrum cannot pair with your {}.\n\n"
-"Before you request bitcoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all bitcoins you receive will be unspendable."
+"Before you request fujicoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all fujicoins you receive will be unspendable."
 msgstr "Az Electrum nem tudott megfelelően kapcsolódni az eszközhöz ({}).\n\n"
-"Mielőtt bármit is küldenél/fogadnál az ebben a pénztárcában lévő címekre, bizonyosodj meg róla, hogy képes vagy megfelelően kapcsolódni az eszközhöz, vagy hogy birtoklod a pénztárca magját (illetve a mag kiterjesztését/jelszavát, ha van). Kizárólag ekkor tudod majd elkölteni a Bitcoinjaid. Ellenkező esetben az összes fogadott Bitcoin elveszik (elkölthetetlen lesz)."
+"Mielőtt bármit is küldenél/fogadnál az ebben a pénztárcában lévő címekre, bizonyosodj meg róla, hogy képes vagy megfelelően kapcsolódni az eszközhöz, vagy hogy birtoklod a pénztárca magját (illetve a mag kiterjesztését/jelszavát, ha van). Kizárólag ekkor tudod majd elkölteni a Fujicoinjaid. Ellenkező esetben az összes fogadott Fujicoin elveszik (elkölthetetlen lesz)."
 
 #: electrum/gui/qt/installwizard.py:730
 msgid "Electrum communicates with remote servers to get information about your transactions and addresses. The servers all fulfill the same purpose only differing in hardware. In most cases you simply want to let Electrum pick one at random.  However if you prefer feel free to select a server manually."
-msgstr "Az Electrum távoli szerverekről kérdezi le a Bitcoin címekkel és tranzakciókkal kapcsolatos információkat. A szerverek mindnyájan ugyanazt a célt szolgálják, és kizárólag hardverben különböznek. Általában elég az Electrumra bízni, hogy véletlenszerűen válasszon egyet. Ám ha szeretnél, manuálisan is választhatsz szervert."
+msgstr "Az Electrum távoli szerverekről kérdezi le a Fujicoin címekkel és tranzakciókkal kapcsolatos információkat. A szerverek mindnyájan ugyanazt a célt szolgálják, és kizárólag hardverben különböznek. Általában elég az Electrumra bízni, hogy véletlenszerűen válasszon egyet. Ám ha szeretnél, manuálisan is választhatsz szervert."
 
 #: electrum/gui/qt/network_dialog.py:272
 msgid "Electrum connects to several nodes in order to download block headers and find out the longest blockchain."
@@ -1860,7 +1860,7 @@ msgid "Electrum will now exit."
 msgstr ""
 
 #: electrum/gui/qt/main_window.py:793
-msgid "Electrum's focus is speed, with low resource usage and simplifying Bitcoin."
+msgid "Electrum's focus is speed, with low resource usage and simplifying Fujicoin."
 msgstr ""
 
 #: electrum/plugins/email_requests/__init__.py:3
@@ -2010,12 +2010,12 @@ msgid "Enter a label to name your device:"
 msgstr "Adj meg egy címkét a készülék elnevezéséhez:"
 
 #: electrum/base_wizard.py:230
-msgid "Enter a list of Bitcoin addresses (this will create a watching-only wallet), or a list of private keys."
-msgstr "Adj meg Bitcoin címeket (ez egy figyelő-tárcát hoz létre), vagy privát kulcsokat."
+msgid "Enter a list of Fujicoin addresses (this will create a watching-only wallet), or a list of private keys."
+msgstr "Adj meg Fujicoin címeket (ez egy figyelő-tárcát hoz létre), vagy privát kulcsokat."
 
 #: electrum/gui/qt/main_window.py:2092
 msgid "Enter a list of outputs in the 'Pay to' field."
-msgstr "Írd be a Bitcoin címeket a \"Pénzküldés ide\" mezőbe."
+msgstr "Írd be a Fujicoin címeket a \"Pénzküldés ide\" mezőbe."
 
 #: electrum/plugins/keepkey/clientbase.py:53
 #: electrum/plugins/safe_t/clientbase.py:55
@@ -2030,8 +2030,8 @@ msgstr "Adj meg egy új jelszót."
 #: electrum/plugins/keepkey/clientbase.py:70
 #: electrum/plugins/safe_t/clientbase.py:75
 #: electrum/plugins/trezor/clientbase.py:295
-msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the bitcoins in the wallet."
-msgstr "Adj meg egy jelszót a pénztárca létrehozásához. Minden alkalommal, amikor ezt a pénztárcát használod, az eszköz ({}) kérni fogja a jelszót. Ha elfelejted a jelszót, akkor nem fogsz tudni hozzáférni a pénztárcában lévő Bitcoinokhoz. A magból sem tudod majd visszaállítani, ha elfelejtetted a jelszót. Ne felejtsd el a jelszót!"
+msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the fujicoins in the wallet."
+msgstr "Adj meg egy jelszót a pénztárca létrehozásához. Minden alkalommal, amikor ezt a pénztárcát használod, az eszköz ({}) kérni fogja a jelszót. Ha elfelejted a jelszót, akkor nem fogsz tudni hozzáférni a pénztárcában lévő Fujicoinokhoz. A magból sem tudod majd visszaállítani, ha elfelejtetted a jelszót. Ne felejtsd el a jelszót!"
 
 #: electrum/gui/qt/main_window.py:3155
 msgid "Enter addresses"
@@ -2417,8 +2417,8 @@ msgid "Firmware Version"
 msgstr "Firmware-verzió"
 
 #: electrum/plugins/ledger/ledger.py:45
-msgid "Firmware version (or \"Bitcoin\" app) too old for Segwit support. Please update at"
-msgstr "Az eszköz firmware-je (vagy a \"Bitcoin\" alkalmazás) túl régi, a Segwit-et nem támogatja. Kérjük frissítsd:"
+msgid "Firmware version (or \"Fujicoin\" app) too old for Segwit support. Please update at"
+msgstr "Az eszköz firmware-je (vagy a \"Fujicoin\" alkalmazás) túl régi, a Segwit-et nem támogatja. Kérjük frissítsd:"
 
 #: electrum/plugins/trezor/qt.py:425
 msgid "Firmware version too old."
@@ -2712,8 +2712,8 @@ msgstr "Ha bejelölöd ezt a négyzetet, akkor a meg nem erősített tranzakció
 
 #: electrum/plugins/keepkey/qt.py:529 electrum/plugins/safe_t/qt.py:459
 #: electrum/plugins/trezor/qt.py:725
-msgid "If you disable your PIN, anyone with physical access to your {} device can spend your bitcoins."
-msgstr "Ha kikapcsolod a PIN kódos védelmet, akkor bárki, aki hozzáfér az eszközödhöz ({}), hozzá tud férni a Bitcoinjaidhoz is."
+msgid "If you disable your PIN, anyone with physical access to your {} device can spend your fujicoins."
+msgstr "Ha kikapcsolod a PIN kódos védelmet, akkor bárki, aki hozzáfér az eszközödhöz ({}), hozzá tud férni a Fujicoinjaidhoz is."
 
 #: electrum/base_wizard.py:502
 msgid "If you do not know what this is, leave this field empty."
@@ -2726,8 +2726,8 @@ msgstr ""
 
 #: electrum/plugins/keepkey/qt.py:34 electrum/plugins/safe_t/qt.py:34
 #: electrum/plugins/trezor/qt.py:34
-msgid "If you forget a passphrase you will be unable to access any bitcoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
-msgstr "Ha elfelejtesz egy jelszót, akkor elvesznek az abban a pénztárcában tárolt Bitcoinok is. A jelszó nem egy PIN kód. Csak akkor változtasd ezt meg, ha pontosan tudod, hogy ez mit jelent."
+msgid "If you forget a passphrase you will be unable to access any fujicoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
+msgstr "Ha elfelejtesz egy jelszót, akkor elvesznek az abban a pénztárcában tárolt Fujicoinok is. A jelszó nem egy PIN kód. Csak akkor változtasd ezt meg, ha pontosan tudod, hogy ez mit jelent."
 
 #: electrum/gui/kivy/uix/dialogs/installwizard.py:837
 msgid "If you forget your password or lose your device, your seed phrase will be the only way to recover your funds."
@@ -2793,12 +2793,12 @@ msgid "Import"
 msgstr "Importálás"
 
 #: electrum/base_wizard.py:229
-msgid "Import Bitcoin Addresses"
-msgstr "Bitcoin címek importálása"
+msgid "Import Fujicoin Addresses"
+msgstr "Fujicoin címek importálása"
 
 #: electrum/base_wizard.py:150
-msgid "Import Bitcoin addresses or private keys"
-msgstr "Bitcoin címek vagy privát kulcsok importálása"
+msgid "Import Fujicoin addresses or private keys"
+msgstr "Fujicoin címek vagy privát kulcsok importálása"
 
 #: electrum/gui/kivy/main_window.py:1378
 msgid "Import Channel Backup?"
@@ -2948,17 +2948,17 @@ msgstr "Érvénytelen összeg"
 
 #: electrum/gui/kivy/uix/screens.py:313
 #: electrum/plugins/hw_wallet/plugin.py:128
-msgid "Invalid Bitcoin Address"
-msgstr "Érvénytelen Bitcoin cím"
+msgid "Invalid Fujicoin Address"
+msgstr "Érvénytelen Fujicoin cím"
 
 #: electrum/gui/stdio.py:175 electrum/gui/text.py:356
-msgid "Invalid Bitcoin address"
-msgstr "Érvénytelen Bitcoin cím"
+msgid "Invalid Fujicoin address"
+msgstr "Érvénytelen Fujicoin cím"
 
 #: electrum/gui/qt/main_window.py:2648 electrum/gui/qt/main_window.py:2676
 #: electrum/wallet.py:2289
-msgid "Invalid Bitcoin address."
-msgstr "Érvénytelen Bitcoin cím."
+msgid "Invalid Fujicoin address."
+msgstr "Érvénytelen Fujicoin cím."
 
 #: electrum/gui/stdio.py:185 electrum/gui/text.py:366
 msgid "Invalid Fee"
@@ -3022,7 +3022,7 @@ msgstr "Számlák"
 
 #: electrum/gui/qt/installwizard.py:44
 msgid "It also contains your master public key that allows watching your addresses."
-msgstr "Továbbá tartalmazza még a nyilvános mesterkulcsot is, ami segítségével figyelheted a Bitcoin-címeid."
+msgstr "Továbbá tartalmazza még a nyilvános mesterkulcsot is, ami segítségével figyelheted a Fujicoin-címeid."
 
 #: electrum/gui/qt/main_window.py:2932
 msgid "It cannot be \"backed up\" by simply exporting these private keys."
@@ -3066,7 +3066,7 @@ msgstr "KeepKey pénztárca"
 
 #: electrum/gui/qt/main_window.py:1377
 msgid "Keyboard shortcut: type \"!\" to send all your coins."
-msgstr "Gyorsbillentyű: ! (felkiáltójel) beírásával az összes elérhető Bitcoin mennyiség beíródik a mezőbe."
+msgstr "Gyorsbillentyű: ! (felkiáltójel) beírásával az összes elérhető Fujicoin mennyiség beíródik a mezőbe."
 
 #: electrum/base_wizard.py:206
 msgid "Keystore"
@@ -3280,8 +3280,8 @@ msgid "Make sure you install it with python3"
 msgstr "Bizonyosodj meg róla, hogy python3-al telepíted"
 
 #: electrum/gui/qt/main_window.py:562
-msgid "Make sure you own the seed phrase or the private keys, before you request Bitcoins to be sent to this wallet."
-msgstr "Bizonyosodj meg róla, hogy birtokában vagy a pénztárca magjának vagy a privát kulcsoknak, mielőtt Bitcoint fogadnál."
+msgid "Make sure you own the seed phrase or the private keys, before you request Fujicoins to be sent to this wallet."
+msgstr "Bizonyosodj meg róla, hogy birtokában vagy a pénztárca magjának vagy a privát kulcsoknak, mielőtt Fujicoint fogadnál."
 
 #: electrum/plugins/coldcard/qt.py:143
 msgid "Master Fingerprint"
@@ -3715,8 +3715,8 @@ msgstr "Csak egy szerverhez csatlakozzon"
 
 #: electrum/plugins/keepkey/qt.py:554 electrum/plugins/safe_t/qt.py:484
 #: electrum/plugins/trezor/qt.py:750
-msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the bitcoins will be lost forever."
-msgstr "Kizárólag akkor töröld az eszközt, ha a visszaállításhoz szükséges magot már leírtad, és az eszközön lévő pénztárcák üresek. Ellenkező esetben az eszközön lévő összes Bitcoin elveszik."
+msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the fujicoins will be lost forever."
+msgstr "Kizárólag akkor töröld az eszközt, ha a visszaállításhoz szükséges magot már leírtad, és az eszközön lévő pénztárcák üresek. Ellenkező esetben az eszközön lévő összes Fujicoin elveszik."
 
 #: electrum/gui/qt/channels_list.py:352 electrum/gui/qt/channels_list.py:388
 msgid "Open Channel"
@@ -3817,8 +3817,8 @@ msgstr ""
 
 #: electrum/plugins/keepkey/qt.py:486 electrum/plugins/safe_t/qt.py:393
 #: electrum/plugins/trezor/qt.py:659
-msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your bitcoins if they obtain physical access to your {}."
-msgstr "A PIN kódos védelem használata erősen ajánlott. A PIN kód az egyetlen mód arra, hogy megvédd a Bitcoinjaid, ha valaki fizikai hozzáférést szerez az eszközödhöz ({})."
+msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your fujicoins if they obtain physical access to your {}."
+msgstr "A PIN kódos védelem használata erősen ajánlott. A PIN kód az egyetlen mód arra, hogy megvédd a Fujicoinjaid, ha valaki fizikai hozzáférést szerez az eszközödhöz ({})."
 
 #: electrum/plugins/keepkey/qt.py:444 electrum/plugins/safe_t/qt.py:352
 #: electrum/plugins/trezor/qt.py:618
@@ -4093,8 +4093,8 @@ msgid "Please save these {0} words on paper (order is important). "
 msgstr "Írd le ezt a {0} szót egy papírra (a sorrend is fontos). Ezekere a szavakra a továbbiakban \"mag\"-ként hivatkozunk. "
 
 #: electrum/gui/kivy/uix/screens.py:291
-msgid "Please scan a Bitcoin address or a payment request"
-msgstr "Kérjük szkennelj be egy Bitcoin címet, vagy egy fizetési kérelmet"
+msgid "Please scan a Fujicoin address or a payment request"
+msgstr "Kérjük szkennelj be egy Fujicoin címet, vagy egy fizetési kérelmet"
 
 #: electrum/gui/qt/main_window.py:616
 msgid "Please select a backup directory"
@@ -4864,8 +4864,8 @@ msgid "Shamir"
 msgstr ""
 
 #: electrum/gui/kivy/uix/dialogs/request_dialog.py:134
-msgid "Share Bitcoin Request"
-msgstr "Bitcoin kérelem megosztása"
+msgid "Share Fujicoin Request"
+msgstr "Fujicoin kérelem megosztása"
 
 #: electrum/gui/kivy/uix/dialogs/invoice_dialog.py:126
 msgid "Share Invoice"
@@ -5061,7 +5061,7 @@ msgid "Standard wallet"
 msgstr "Általános pénztárca"
 
 #: electrum/gui/qt/main_window.py:796
-msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Bitcoin system."
+msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Fujicoin system."
 msgstr ""
 
 #: electrum/gui/qt/channel_details.py:173
@@ -5177,11 +5177,11 @@ msgstr "Testnet"
 
 #: electrum/gui/qt/main_window.py:578
 msgid "Testnet coins are worthless."
-msgstr "A Testnet-en lévő Bitcoinok értéktelenek."
+msgstr "A Testnet-en lévő Fujicoinok értéktelenek."
 
 #: electrum/gui/qt/main_window.py:579
-msgid "Testnet is separate from the main Bitcoin network. It is used for testing."
-msgstr "A Testnet egy külön Bitcoin hálózat, amit tesztelésre használnak."
+msgid "Testnet is separate from the main Fujicoin network. It is used for testing."
+msgstr "A Testnet egy külön Fujicoin hálózat, amit tesztelésre használnak."
 
 #: electrum/gui/qt/util.py:839 electrum/gui/qt/main_window.py:1289
 #: electrum/gui/qt/qrcodewidget.py:148
@@ -5231,8 +5231,8 @@ msgid "The amount will be displayed in red if you do not have enough funds in yo
 msgstr "Az összeg piros színű lesz, ha nincs elég pénz a pénztárcában."
 
 #: electrum/gui/qt/main_window.py:1100
-msgid "The bitcoin address never expires and will always be part of this electrum wallet."
-msgstr "A kérelemhez tartozó Bitcoin cím soha nem jár le, mindig is része marad ennek a pénztárcának."
+msgid "The fujicoin address never expires and will always be part of this electrum wallet."
+msgstr "A kérelemhez tartozó Fujicoin cím soha nem jár le, mindig is része marad ennek a pénztárcának."
 
 #: electrum/gui/qt/channels_list.py:520
 msgid "The channel peer can route Trampoline payments."
@@ -5462,8 +5462,8 @@ msgid "This may result in higher transactions fees."
 msgstr "Ez magasabb tranzakciós díjakhoz vezethet."
 
 #: electrum/gui/qt/main_window.py:561
-msgid "This means you will not be able to spend Bitcoins with it."
-msgstr "Ez azt jelenti, hogy nem tudsz vele Bitcoint küldeni."
+msgid "This means you will not be able to spend Fujicoins with it."
+msgstr "Ez azt jelenti, hogy nem tudsz vele Fujicoint küldeni."
 
 #: electrum/gui/qt/settings_dialog.py:335
 msgid "This might improve your privacy somewhat."
@@ -5679,7 +5679,7 @@ msgstr "A tranzakció már el lett mentve, vagy még nem lett aláírva."
 #: electrum/network.py:927
 msgid "Transaction could not be broadcast due to dust outputs.\n"
 "Some of the outputs are too small in value, probably lower than 1000 satoshis.\n"
-"Check the units, make sure you haven't confused e.g. mBTC and BTC."
+"Check the units, make sure you haven't confused e.g. mFJC and FJC."
 msgstr ""
 
 #: electrum/gui/qt/main_window.py:3417
@@ -6330,7 +6330,7 @@ msgid "You can override the suggested derivation path."
 msgstr "Felülírhatod az ajánlott generálási útvonalat."
 
 #: electrum/gui/qt/main_window.py:1101
-msgid "You can reuse a bitcoin address any number of times but it is not good for your privacy."
+msgid "You can reuse a fujicoin address any number of times but it is not good for your privacy."
 msgstr ""
 
 #: electrum/plugins/safe_t/qt.py:414 electrum/plugins/trezor/qt.py:680
@@ -6363,8 +6363,8 @@ msgid "You have {n} open channels."
 msgstr ""
 
 #: electrum/gui/qt/main_window.py:1356
-msgid "You may enter a Bitcoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a Bitcoin address)"
-msgstr "Írj be egy Bitcoin címet, egy címkét a névjegyekből (kitöltést segítő ajánlások jelennek meg), vagy egy álnevet (e-mailhez hasonló cím, ami egyenesen az címzett Bitcoin címére továbbít)"
+msgid "You may enter a Fujicoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a Fujicoin address)"
+msgstr "Írj be egy Fujicoin címet, egy címkét a névjegyekből (kitöltést segítő ajánlások jelennek meg), vagy egy álnevet (e-mailhez hasonló cím, ami egyenesen az címzett Fujicoin címére továbbít)"
 
 #: electrum/base_wizard.py:497
 msgid "You may extend your seed with custom words."
@@ -6413,7 +6413,7 @@ msgstr ""
 
 #: electrum/plugins/keepkey/qt.py:31 electrum/plugins/safe_t/qt.py:31
 #: electrum/plugins/trezor/qt.py:31
-msgid "You should enable PIN protection.  Your PIN is the only protection for your bitcoins if your device is lost or stolen."
+msgid "You should enable PIN protection.  Your PIN is the only protection for your fujicoins if your device is lost or stolen."
 msgstr "Erősen ajánlott a PIN kódos védelem engedélyezése. A PIN kód az egyetlen dolog ami megvédi az eszközt, ha az elveszik, vagy ha ellopják."
 
 #: electrum/plugins/safe_t/safe_t.py:212 electrum/plugins/trezor/trezor.py:250
@@ -6435,8 +6435,8 @@ msgid "Your accounts have been moved to"
 msgstr "A fiókok át lettek helyezve ide"
 
 #: electrum/gui/qt/password_dialog.py:256
-msgid "Your bitcoins are password protected. However, your wallet file is not encrypted."
-msgstr "A Bitcoinjaid jelszó védi. Viszont a pénztárca fájl nincs titkosítva."
+msgid "Your fujicoins are password protected. However, your wallet file is not encrypted."
+msgstr "A Fujicoinjaid jelszó védi. Viszont a pénztárca fájl nincs titkosítva."
 
 #: electrum/gui/qt/main_window.py:2475 electrum/gui/kivy/main_window.py:1411
 msgid "Your channels cannot be recovered from seed, because they were created with an old version of Electrum. This means that you must save a backup of your wallet everytime you create a new channel.\n\n"
@@ -6484,7 +6484,7 @@ msgid "Your server is on branch"
 msgstr "A szerver az alábbi ágon van:"
 
 #: electrum/network.py:1011
-msgid "Your transaction is paying a fee that is so low that the bitcoin node cannot fit it into its mempool. The mempool is already full of hundreds of megabytes of transactions that all pay higher fees. Try to increase the fee."
+msgid "Your transaction is paying a fee that is so low that the fujicoin node cannot fit it into its mempool. The mempool is already full of hundreds of megabytes of transactions that all pay higher fees. Try to increase the fee."
 msgstr ""
 
 #: electrum/network.py:1020
