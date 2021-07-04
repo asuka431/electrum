@@ -66,12 +66,12 @@ class ExchangeBase(Logger):
                 response.raise_for_status()
                 return await response.text()
 
-    async def get_json(self, site, get_string):
+    async def get_json(self, site, get_string, headers=None):
         # APIs must have https
         url = ''.join(['https://', site, get_string])
         network = Network.get_instance()
         proxy = network.proxy if network else None
-        async with make_aiohttp_session(proxy) as session:
+        async with make_aiohttp_session(proxy, headers) as session:
             async with session.get(url) as response:
                 response.raise_for_status()
                 # set content_type to None to disable checking MIME type
@@ -166,12 +166,17 @@ class ExchangeBase(Logger):
 class CoinMarketCap(ExchangeBase):
 
     async def get_rates(self, ccy):
-        json_usd = await self.get_json('api.coinmarketcap.com', '/v1/ticker/fujicoin/')
-        json_eur = await self.get_json('api.coinmarketcap.com', '/v1/ticker/fujicoin/?convert=EUR')
-        json_jpy = await self.get_json('api.coinmarketcap.com', '/v1/ticker/fujicoin/?convert=JPY')
-        return {'USD': Decimal(json_usd[0]['price_usd']),
-                'EUR': Decimal(json_eur[0]['price_eur']),
-                'JPY': Decimal(json_jpy[0]['price_jpy'])}
+        headers = {
+            'Accepts': 'application/json',
+            'X-CMC_PRO_API_KEY': 'c848157a-38c0-463b-8f11-afec785e231a',
+        }
+        site = 'pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
+        json_usd = await self.get_json(site, '?symbol=FJC&convert=USD', headers)
+        json_eur = await self.get_json(site, '?symbol=FJC&convert=EUR', headers)
+        json_jpy = await self.get_json(site, '?symbol=FJC&convert=JPY', headers)
+        return {'USD': Decimal(json_usd['data']['FJC']['quote']['USD']['price']),
+                'EUR': Decimal(json_eur['data']['FJC']['quote']['EUR']['price']),
+                'JPY': Decimal(json_jpy['data']['FJC']['quote']['JPY']['price'])}
 
 
 class BitcoinAverage(ExchangeBase):
