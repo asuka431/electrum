@@ -878,7 +878,7 @@ class RestoreSeedDialog(WizardDialog):
         self.opt_ext = kwargs['opt_ext']
         self.opt_bip39 = kwargs['opt_bip39']
         self.is_ext = False
-        self.is_bip39 = False
+        self.is_bip39 = True
 
     def options_dialog(self):
         from .seed_options import SeedOptionsDialog
