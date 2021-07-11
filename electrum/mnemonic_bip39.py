@@ -63,6 +63,7 @@ def b58encode(v):
 
 class Mnemonic(object):
     def __init__(self, language):
+        self.language = language
         self.radix = 2048
         if sys.version < "3":
             with open("%s/%s.txt" % (self._get_directory(), language), "r") as f:
@@ -83,14 +84,6 @@ class Mnemonic(object):
         return os.path.join(os.path.dirname(__file__), "wordlist")
 
     @classmethod
-    def list_languages(cls):
-        return [
-            f.split(".")[0]
-            for f in os.listdir(cls._get_directory())
-            if f.endswith(".txt")
-        ]
-
-    @classmethod
     def normalize_string(cls, txt):
         if isinstance(txt, str if sys.version < "3" else bytes):
             utxt = txt.decode("utf8")
@@ -100,19 +93,6 @@ class Mnemonic(object):
             raise TypeError("String value expected")
 
         return unicodedata.normalize("NFKD", utxt)
-
-    @classmethod
-    def detect_language(cls, code):
-        code = cls.normalize_string(code)
-        first = code.split(" ")[0]
-        languages = cls.list_languages()
-
-        for lang in languages:
-            mnemo = cls(lang)
-            if first in mnemo.wordlist:
-                return lang
-
-        raise ConfigurationError("Language not detected")
 
     def generate(self, strength=128):
         if strength not in [128, 160, 192, 224, 256]:
@@ -136,7 +116,7 @@ class Mnemonic(object):
         concatLenBits = len(words) * 11
         concatBits = [False] * concatLenBits
         wordindex = 0
-        if self.detect_language(" ".join(words)) == "english":
+        if self.language == "english":
             use_binary_search = True
         else:
             use_binary_search = False
@@ -200,7 +180,7 @@ class Mnemonic(object):
             idx = int(b[i * 11 : (i + 1) * 11], 2)
             result.append(self.wordlist[idx])
         if (
-            self.detect_language(" ".join(result)) == "japanese"
+            self.language == "japanese"
         ):  # Japanese must be joined by ideographic space.
             result_phrase = u"\u3000".join(result)
         else:
