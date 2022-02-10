@@ -612,7 +612,7 @@ class ElectrumWindow(App, Logger):
         self.fiat_unit = self.fx.ccy if self.fx.is_enabled() else ''
         # default tab
         self.switch_to('history')
-        # bind intent for fujicoin: URI scheme
+        # bind intent for baricoin: URI scheme
         if platform == 'android':
             from android import activity
             from jnius import autoclass
@@ -990,8 +990,8 @@ class ElectrumWindow(App, Logger):
                 from plyer import notification
             icon = (os.path.dirname(os.path.realpath(__file__))
                     + '/../../' + self.icon)
-            notification.notify('Electrum-FJC', message,
-                            app_icon=icon, app_name='Electrum-FJC')
+            notification.notify('Electrum-BARI', message,
+                            app_icon=icon, app_name='Electrum-BARI')
         except ImportError:
             self.logger.Error('Notification: needs plyer; `sudo python3 -m pip install plyer`')
 

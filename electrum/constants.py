@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Electrum - lightweight Fujicoin client
+# Electrum - lightweight baricoin client
 # Copyright (C) 2018 The Electrum developers
 #
 # Permission is hereby granted, free of charge, to any person
@@ -72,16 +72,16 @@ class BitcoinMainnet(AbstractNet):
 
     NET_NAME = "mainnet"
     TESTNET = False
-    WIF_PREFIX = 164
-    ADDRTYPE_P2PKH = 36
-    ADDRTYPE_P2SH = 16
-    SEGWIT_HRP = "fc"
+    WIF_PREFIX = 154
+    ADDRTYPE_P2PKH = 26
+    ADDRTYPE_P2SH = 21
+    SEGWIT_HRP = "bari"
     BOLT11_HRP = SEGWIT_HRP
-    GENESIS = "adb6d9cfd74075e7f91608add4bd2a2ea636f70856183086842667a1597714a0"
+    GENESIS = "0x3b29e926d8908b953b7ccc143eb14f5a1cd952600987420460da4acd1633b949"
     DEFAULT_PORTS = {'t': '50001', 's': '50002'}
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
-    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 3000000
+    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 0
 
     XPRV_HEADERS = {
         'standard':    0x0488ade4,  # xprv
@@ -99,7 +99,7 @@ class BitcoinMainnet(AbstractNet):
         'p2wsh':       0x02aa7ed3,  # Zpub
     }
     XPUB_HEADERS_INV = inv_dict(XPUB_HEADERS)
-    BIP44_COIN_TYPE = 75
+    BIP44_COIN_TYPE = 810
     LN_REALM_BYTE = 0
     LN_DNS_SEEDS = [
     ]

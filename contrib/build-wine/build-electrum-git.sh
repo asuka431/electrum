@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME_ROOT=electrum-FJC
+NAME_ROOT=electrum-BARI
 
 export PYTHONDONTWRITEBYTECODE=1
 

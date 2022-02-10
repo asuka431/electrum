@@ -20,11 +20,11 @@ from electrum.network import Network
 
 
 class UpdateCheck(QDialog, Logger):
-    url = "https://electrum.fujicoin.org/version"
-    download_url = "https://www.fujicoin.org/en/download"
+    url = "https://electrum.baricoin.org/version"
+    download_url = "https://www.baricoin.org/en/download"
 
     VERSION_ANNOUNCEMENT_SIGNING_KEYS = (
-        "Fk21aH8Xjd3V3cP6Fw3qMGSmfEQtztLNns",
+        "Fk21aH8Xjd3V3cP6Fw3qMGSm4334fEQtztLNns",
     )
 
     def __init__(self, *, latest_version=None):

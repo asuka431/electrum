@@ -1,4 +1,4 @@
-# Electrum - lightweight Fujicoin client
+# Electrum - lightweight Baricoin client
 # Copyright (C) 2011 Thomas Voegtlin
 #
 # Permission is hereby granted, free of charge, to any person
@@ -83,18 +83,18 @@ def all_subclasses(cls) -> Set:
 ca_path = certifi.where()
 
 
-base_units = {'FJC':8, 'mFJC':5, 'bits':2, 'sat':0}
+base_units = {'BARI':8, 'mBARI':5, 'bits':2, 'sat':0}
 base_units_inverse = inv_dict(base_units)
-base_units_list = ['FJC', 'mFJC', 'bits', 'sat']  # list(dict) does not guarantee order
+base_units_list = ['BARI', 'mBARI', 'bits', 'sat']  # list(dict) does not guarantee order
 
-DECIMAL_POINT_DEFAULT = 8  # FJC
+DECIMAL_POINT_DEFAULT = 8  # BARI
 
 
 class UnknownBaseUnit(Exception): pass
 
 
 def decimal_point_to_base_unit_name(dp: int) -> str:
-    # e.g. 8 -> "FJC"
+    # e.g. 8 -> "BARI"
     try:
         return base_units_inverse[dp]
     except KeyError:
@@ -102,7 +102,7 @@ def decimal_point_to_base_unit_name(dp: int) -> str:
 
 
 def base_unit_name_to_decimal_point(unit_name: str) -> int:
-    # e.g. "FJC" -> 8
+    # e.g. "BARI" -> 8
     try:
         return base_units[unit_name]
     except KeyError:
@@ -425,7 +425,7 @@ def android_ext_dir():
     return primary_external_storage_path()
 
 def android_backup_dir():
-    d = os.path.join(android_ext_dir(), 'org.electrum_fjc.electrum_fjc')
+    d = os.path.join(android_ext_dir(), 'org.electrum_bari.electrum_bari')
     if not os.path.exists(d):
         os.mkdir(d)
     return d
@@ -558,11 +558,11 @@ def user_dir():
     elif 'ANDROID_DATA' in os.environ:
         return android_data_dir()
     elif os.name == 'posix':
-        return os.path.join(os.environ["HOME"], ".electrum-fjc")
+        return os.path.join(os.environ["HOME"], ".electrum-bari")
     elif "APPDATA" in os.environ:
-        return os.path.join(os.environ["APPDATA"], "Electrum-FJC")
+        return os.path.join(os.environ["APPDATA"], "Electrum-BARI")
     elif "LOCALAPPDATA" in os.environ:
-        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-FJC")
+        return os.path.join(os.environ["LOCALAPPDATA"], "Electrum-BARI")
     else:
         #raise Exception("No home directory found in environment variables.")
         return
@@ -852,7 +852,7 @@ def block_explorer_URL(config: 'SimpleConfig', kind: str, item: str) -> Optional
 
 
 # note: when checking against these, use .lower() to support case-insensitivity
-BITCOIN_BIP21_URI_SCHEME = 'fujicoin'
+BITCOIN_BIP21_URI_SCHEME = 'baricoin'
 LIGHTNING_URI_SCHEME = 'lightning'
 
 
@@ -870,12 +870,12 @@ def parse_URI(uri: str, on_pr: Callable = None, *, loop=None) -> dict:
 
     if ':' not in uri:
         if not bitcoin.is_address(uri):
-            raise InvalidBitcoinURI("Not a fujicoin address")
+            raise InvalidBitcoinURI("Not a baricoin address")
         return {'address': uri}
 
     u = urllib.parse.urlparse(uri)
     if u.scheme.lower() != BITCOIN_BIP21_URI_SCHEME:
-        raise InvalidBitcoinURI("Not a fujicoin URI")
+        raise InvalidBitcoinURI("Not a baricoin URI")
     address = u.path
 
     # python for android fails to parse query
@@ -892,7 +892,7 @@ def parse_URI(uri: str, on_pr: Callable = None, *, loop=None) -> dict:
     out = {k: v[0] for k, v in pq.items()}
     if address:
         if not bitcoin.is_address(address):
-            raise InvalidBitcoinURI(f"Invalid fujicoin address: {address}")
+            raise InvalidBitcoinURI(f"Invalid baricoin address: {address}")
         out['address'] = address
     if 'amount' in out:
         am = out['amount']
@@ -904,7 +904,7 @@ def parse_URI(uri: str, on_pr: Callable = None, *, loop=None) -> dict:
             else:
                 amount = Decimal(am) * COIN
             if amount > TOTAL_COIN_SUPPLY_LIMIT_IN_BTC * COIN:
-                raise InvalidBitcoinURI(f"amount is out-of-bounds: {amount!r} FJC")
+                raise InvalidBitcoinURI(f"amount is out-of-bounds: {amount!r} BARI")
             out['amount'] = int(amount)
         except Exception as e:
             raise InvalidBitcoinURI(f"failed to parse 'amount' field: {repr(e)}") from e

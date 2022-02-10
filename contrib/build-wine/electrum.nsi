@@ -6,10 +6,10 @@
 ;--------------------------------
 ;Variables
 
-  !define PRODUCT_NAME "Electrum-FJC"
+  !define PRODUCT_NAME "Electrum-BARI"
   !define PRODUCT_VER "4.1.4"
-  !define PRODUCT_WEB_SITE "https://github.com/fujicoin/electrum/tree/fujicoin-v4.1.4"
-  !define PRODUCT_PUBLISHER "fujicoin.org"
+  !define PRODUCT_WEB_SITE "https://github.com/asuka431/electrum/tree/fujicoin-v4.1.4"
+  !define PRODUCT_PUBLISHER "baricoin.org"
   !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 
 ;--------------------------------
@@ -59,7 +59,7 @@
   VIAddVersionKey ProductName "${PRODUCT_NAME} Installer"
   VIAddVersionKey Comments "The installer for ${PRODUCT_NAME}"
   VIAddVersionKey CompanyName "${PRODUCT_PUBLISHER}"
-  VIAddVersionKey LegalCopyright "2017-2021 ${PRODUCT_PUBLISHER}"
+  VIAddVersionKey LegalCopyright "2021-2022 ${PRODUCT_PUBLISHER}"
   VIAddVersionKey FileDescription "${PRODUCT_NAME} Installer"
   VIAddVersionKey FileVersion ${PRODUCT_VER}
   VIAddVersionKey ProductVersion ${PRODUCT_VER}
@@ -126,8 +126,8 @@ Section
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VER}\Uninstall.lnk" "$INSTDIR\Uninstall.exe" "" "$INSTDIR\Uninstall.exe" 0
   CreateShortCut "$SMPROGRAMS\${PRODUCT_NAME}-${PRODUCT_VER}\${PRODUCT_NAME}-${PRODUCT_VER}.lnk" "$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VER}.exe" "" "$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VER}.exe" 0
 
-  ;Links fujicoin: URI's to Electrum-FJC
-  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VER}" "" "URL:fujicoin Protocol"
+  ;Links baricoin: URI's to Electrum-BARI
+  WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VER}" "" "URL:baricoin Protocol"
   WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VER}" "URL Protocol" ""
   WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VER}" "DefaultIcon" "$\"$INSTDIR\electrum.ico, 0$\""
   WriteRegStr HKCU "Software\Classes\${PRODUCT_NAME}-${PRODUCT_VER}\shell\open\command" "" "$\"$INSTDIR\${PRODUCT_NAME}-${PRODUCT_VER}.exe$\" $\"%1$\""

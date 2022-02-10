@@ -88,10 +88,10 @@ setup(
     include_package_data=True,
     scripts=['electrum/electrum'],
     data_files=data_files,
-    description="Lightweight Fujicoin Wallet",
+    description="Lightweight Baricoin Wallet",
     author="Thomas Voegtlin",
     author_email="thomasv@electrum.org",
     license="MIT Licence",
-    url="https://www.fujicoin.org",
-    long_description="""Lightweight Fujicoin Wallet""",
+    url="https://github.com/baricoin/",
+    long_description="""Baricoin""",
 )

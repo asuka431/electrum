@@ -1,17 +1,11 @@
 {
-    "electrumx1.fujicoin.org": {
+    "baricoin.clear-net.jp": {
         "pruning": "-",
         "s": "50002",
         "t": "50001",
         "version": "1.4"
     },
-    "electrumx2.fujicoin.org": {
-        "pruning": "-",
-        "s": "50002",
-        "t": "50001",
-        "version": "1.4"
-    },
-    "electrumx3.fujicoin.org": {
+    "baripool.f5.si": {
         "pruning": "-",
         "s": "50002",
         "t": "50001",
