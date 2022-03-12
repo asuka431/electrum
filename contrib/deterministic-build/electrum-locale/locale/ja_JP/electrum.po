@@ -39,7 +39,7 @@ msgstr "アドレス"
 
 #: electrum/gui/qt/main_window.py:775
 msgid "&Baricoin Paper"
-msgstr "ビットコインの元論文(ホワイトペーパー)(&B)"
+msgstr "バリコインの元論文(ホワイトペーパー)(&B)"
 
 #: electrum/gui/qt/main_window.py:770
 msgid "&Check for updates"
@@ -482,7 +482,7 @@ msgstr "アラビア語"
 msgid "Are you SURE you want to wipe the device?\n"
 "Your wallet still has baricoins in it!"
 msgstr "デバイスを本当に消去しても大丈夫ですか？\n"
-"あなたのウォレットにはまだビットコインが入っています!"
+"あなたのウォレットにはまだバリコインが入っています!"
 
 #: electrum/gui/qt/channels_list.py:168
 #: electrum/gui/kivy/uix/dialogs/lightning_channels.py:534
@@ -667,15 +667,15 @@ msgstr "BitBox02の状態"
 
 #: electrum/gui/kivy/uix/ui_screens/receive.kv:95
 msgid "Baricoin Address"
-msgstr "ビットコインアドレス"
+msgstr "バリコインアドレス"
 
 #: electrum/gui/qt/main_window.py:1511
 msgid "Baricoin Address is None"
-msgstr "ビットコインアドレスがありません"
+msgstr "バリコインアドレスがありません"
 
 #: electrum/gui/qt/confirm_tx_dialog.py:142
 msgid "Baricoin transactions are in general not free. A transaction fee is paid by the sender of the funds."
-msgstr "一般的にビットコインの取引は無料ではありません。送信側に手数料がかかります。"
+msgstr "一般的にバリコインの取引は無料ではありません。送信側に手数料がかかります。"
 
 #: electrum/gui/qt/locktimeedit.py:36
 msgid "Block height"
@@ -1666,7 +1666,7 @@ msgstr "デバイス通信エラー: Digital Bitboxを取り外して、再度�
 
 #: electrum/plugins/ledger/ledger.py:230
 msgid "Device not in Baricoin mode"
-msgstr "デバイスはビットコインモードではありません"
+msgstr "デバイスはバリコインモードではありません"
 
 #: electrum/plugins/digitalbitbox/__init__.py:5
 msgid "Digital Bitbox wallet"
@@ -1804,7 +1804,7 @@ msgstr "Electurm プラグイン"
 msgid "Electrum cannot pair with your {}.\n\n"
 "Before you request baricoins to be sent to addresses in this wallet, ensure you can pair with your device, or that you have its seed (and passphrase, if any).  Otherwise all baricoins you receive will be unspendable."
 msgstr "Electrumは{}とペアリングできません。\n\n"
-"このウォレットのアドレスにビットコインを送信するようにリクエストする前に、デバイスとペアリングができることを確認してください。もしくは、シード(あればパスフレーズも)が手元にあることを確認してください。さもなくば、これから受け取るすべてのビットコインが利用できなくなるでしょう。"
+"このウォレットのアドレスにバリコインを送信するようにリクエストする前に、デバイスとペアリングができることを確認してください。もしくは、シード(あればパスフレーズも)が手元にあることを確認してください。さもなくば、これから受け取るすべてのバリコインが利用できなくなるでしょう。"
 
 #: electrum/gui/qt/installwizard.py:730
 msgid "Electrum communicates with remote servers to get information about your transactions and addresses. The servers all fulfill the same purpose only differing in hardware. In most cases you simply want to let Electrum pick one at random.  However if you prefer feel free to select a server manually."
@@ -2012,7 +2012,7 @@ msgstr "あなたのデバイスの名前としてラベルを入力してくだ
 
 #: electrum/base_wizard.py:230
 msgid "Enter a list of Baricoin addresses (this will create a watching-only wallet), or a list of private keys."
-msgstr "ビットコインのアドレス又は秘密鍵のリストを入力して下さい。（アドレスの場合は監視専用のウォレットを作ります）"
+msgstr "バリコインのアドレス又は秘密鍵のリストを入力して下さい。（アドレスの場合は監視専用のウォレットを作ります）"
 
 #: electrum/gui/qt/main_window.py:2092
 msgid "Enter a list of outputs in the 'Pay to' field."
@@ -2032,7 +2032,7 @@ msgstr "以下に新しいパスワードを入力してください。"
 #: electrum/plugins/safe_t/clientbase.py:75
 #: electrum/plugins/trezor/clientbase.py:295
 msgid "Enter a passphrase to generate this wallet.  Each time you use this wallet your {} will prompt you for the passphrase.  If you forget the passphrase you cannot access the baricoins in the wallet."
-msgstr "このウォレットを生成するパスフレーズを入力してください。このウォレットを使う度に、{}があなたにパスフレーズを要求します。パスフレーズを忘れると、ウォレット内のビットコインにアクセスできなくなります。"
+msgstr "このウォレットを生成するパスフレーズを入力してください。このウォレットを使う度に、{}があなたにパスフレーズを要求します。パスフレーズを忘れると、ウォレット内のバリコインにアクセスできなくなります。"
 
 #: electrum/gui/qt/main_window.py:3155
 msgid "Enter addresses"
@@ -2728,7 +2728,7 @@ msgstr "このチャネルを強制クローズすると、チャネル内のあ
 #: electrum/plugins/keepkey/qt.py:34 electrum/plugins/safe_t/qt.py:34
 #: electrum/plugins/trezor/qt.py:34
 msgid "If you forget a passphrase you will be unable to access any baricoins in the wallet behind it.  A passphrase is not a PIN. Only change this if you are sure you understand it."
-msgstr "パスフレーズを忘れると、ウォレット内のビットコインにはアクセスすることができなくなります。パスフレーズはPINではありません。これを確実に理解している場合のみ変更してください。"
+msgstr "パスフレーズを忘れると、ウォレット内のバリコインにはアクセスすることができなくなります。パスフレーズはPINではありません。これを確実に理解している場合のみ変更してください。"
 
 #: electrum/gui/kivy/uix/dialogs/installwizard.py:837
 msgid "If you forget your password or lose your device, your seed phrase will be the only way to recover your funds."
@@ -2796,11 +2796,11 @@ msgstr "インポート"
 
 #: electrum/base_wizard.py:229
 msgid "Import Baricoin Addresses"
-msgstr "ビットコインアドレスのインポート"
+msgstr "バリコインアドレスのインポート"
 
 #: electrum/base_wizard.py:150
 msgid "Import Baricoin addresses or private keys"
-msgstr "ビットコインアドレスまたは秘密鍵のインポート"
+msgstr "バリコインアドレスまたは秘密鍵のインポート"
 
 #: electrum/gui/kivy/main_window.py:1378
 msgid "Import Channel Backup?"
@@ -2951,16 +2951,16 @@ msgstr "金額が不正です"
 #: electrum/gui/kivy/uix/screens.py:313
 #: electrum/plugins/hw_wallet/plugin.py:128
 msgid "Invalid Baricoin Address"
-msgstr "無効なビットコインアドレスです"
+msgstr "無効なバリコインアドレスです"
 
 #: electrum/gui/stdio.py:175 electrum/gui/text.py:356
 msgid "Invalid Baricoin address"
-msgstr "無効なビットコインアドレスです"
+msgstr "無効なバリコインアドレスです"
 
 #: electrum/gui/qt/main_window.py:2648 electrum/gui/qt/main_window.py:2676
 #: electrum/wallet.py:2289
 msgid "Invalid Baricoin address."
-msgstr "無効なビットコインアドレスです。"
+msgstr "無効なバリコインアドレスです。"
 
 #: electrum/gui/stdio.py:185 electrum/gui/text.py:366
 msgid "Invalid Fee"
@@ -3283,7 +3283,7 @@ msgstr "python3を使ってインストールしていることを確認して�
 
 #: electrum/gui/qt/main_window.py:562
 msgid "Make sure you own the seed phrase or the private keys, before you request Baricoins to be sent to this wallet."
-msgstr "このウォレットへのビットコインの送金を請求する場合は、あなたがシードや秘密鍵を持っているか確認して下さい。"
+msgstr "このウォレットへのバリコインの送金を請求する場合は、あなたがシードや秘密鍵を持っているか確認して下さい。"
 
 #: electrum/plugins/coldcard/qt.py:143
 msgid "Master Fingerprint"
@@ -3718,7 +3718,7 @@ msgstr "単一のサーバーのみに接続する"
 #: electrum/plugins/keepkey/qt.py:554 electrum/plugins/safe_t/qt.py:484
 #: electrum/plugins/trezor/qt.py:750
 msgid "Only wipe a device if you have the recovery seed written down and the device wallet(s) are empty, otherwise the baricoins will be lost forever."
-msgstr "リカバリ用シードを書き留めて、デバイス内のウォレットが空になっている状態であることを確認してからデバイスを消去してください。さもなくば、ビットコインは永久に失われるでしょう。"
+msgstr "リカバリ用シードを書き留めて、デバイス内のウォレットが空になっている状態であることを確認してからデバイスを消去してください。さもなくば、バリコインは永久に失われるでしょう。"
 
 #: electrum/gui/qt/channels_list.py:352 electrum/gui/qt/channels_list.py:388
 msgid "Open Channel"
@@ -3820,7 +3820,7 @@ msgstr "PINが更新されていません"
 #: electrum/plugins/keepkey/qt.py:486 electrum/plugins/safe_t/qt.py:393
 #: electrum/plugins/trezor/qt.py:659
 msgid "PIN protection is strongly recommended.  A PIN is your only protection against someone stealing your baricoins if they obtain physical access to your {}."
-msgstr "PINによる保護が強く推奨されます。あなたの{}が物理的に誰かに盗まれたとき、PINはあなたのビットコインを守る唯一の保護手段です。"
+msgstr "PINによる保護が強く推奨されます。あなたの{}が物理的に誰かに盗まれたとき、PINはあなたのバリコインを守る唯一の保護手段です。"
 
 #: electrum/plugins/keepkey/qt.py:444 electrum/plugins/safe_t/qt.py:352
 #: electrum/plugins/trezor/qt.py:618
@@ -4096,7 +4096,7 @@ msgstr "この{0}個の単語を順番通りに紙に記録して下さい。"
 
 #: electrum/gui/kivy/uix/screens.py:291
 msgid "Please scan a Baricoin address or a payment request"
-msgstr "ビットコインのアドレスか支払いリクエストをスキャンしてください"
+msgstr "バリコインのアドレスか支払いリクエストをスキャンしてください"
 
 #: electrum/gui/qt/main_window.py:616
 msgid "Please select a backup directory"
@@ -4867,7 +4867,7 @@ msgstr "シャミア"
 
 #: electrum/gui/kivy/uix/dialogs/request_dialog.py:134
 msgid "Share Baricoin Request"
-msgstr "ビットコインリクエストを共有"
+msgstr "バリコインリクエストを共有"
 
 #: electrum/gui/kivy/uix/dialogs/invoice_dialog.py:126
 msgid "Share Invoice"
@@ -5064,7 +5064,7 @@ msgstr "スタンダードウォレット"
 
 #: electrum/gui/qt/main_window.py:796
 msgid "Startup times are instant because it operates in conjunction with high-performance servers that handle the most complicated parts of the Baricoin system."
-msgstr "起動時間は一瞬に限りなく近く、その裏にはたくさんの高性能サーバがあり、それらによりビットコインネットワークの最新状況をスピーディー且つ低負荷でお届けします。"
+msgstr "起動時間は一瞬に限りなく近く、その裏にはたくさんの高性能サーバがあり、それらによりバリコインネットワークの最新状況をスピーディー且つ低負荷でお届けします。"
 
 #: electrum/gui/qt/channel_details.py:173
 msgid "State:"
@@ -5468,7 +5468,7 @@ msgstr "高額な送金手数料となるかもしれません"
 
 #: electrum/gui/qt/main_window.py:561
 msgid "This means you will not be able to spend Baricoins with it."
-msgstr "このことは、このウォレットのビットコインを使用することが出来ないことを意味します。"
+msgstr "このことは、このウォレットのバリコインを使用することが出来ないことを意味します。"
 
 #: electrum/gui/qt/settings_dialog.py:335
 msgid "This might improve your privacy somewhat."
@@ -6341,7 +6341,7 @@ msgstr "規定のパスを書き換え可能です。"
 
 #: electrum/gui/qt/main_window.py:1101
 msgid "You can reuse a baricoin address any number of times but it is not good for your privacy."
-msgstr "ビットコインのアドレスは何回でも使い回すことができますが、あなたのプライバシーのためには好ましくありません。"
+msgstr "バリコインのアドレスは何回でも使い回すことができますが、あなたのプライバシーのためには好ましくありません。"
 
 #: electrum/plugins/safe_t/qt.py:414 electrum/plugins/trezor/qt.py:680
 msgid "You can set the homescreen on your device to personalize it.  You must choose a {} x {} monochrome black and white image."
@@ -6374,7 +6374,7 @@ msgstr "{n}のオープン済みチャネルがあります。"
 
 #: electrum/gui/qt/main_window.py:1356
 msgid "You may enter a Baricoin address, a label from your list of contacts (a list of completions will be proposed), or an alias (email-like address that forwards to a Baricoin address)"
-msgstr "入力形式には、ビットコインアドレス、アドレス帳のラベル(候補が表示されます)、エイリアス(メールアドレスのような形式のビットコインアドレス)が使えます。"
+msgstr "入力形式には、バリコインアドレス、アドレス帳のラベル(候補が表示されます)、エイリアス(メールアドレスのような形式のバリコインアドレス)が使えます。"
 
 #: electrum/base_wizard.py:497
 msgid "You may extend your seed with custom words."
@@ -6424,7 +6424,7 @@ msgstr "送金額"
 #: electrum/plugins/keepkey/qt.py:31 electrum/plugins/safe_t/qt.py:31
 #: electrum/plugins/trezor/qt.py:31
 msgid "You should enable PIN protection.  Your PIN is the only protection for your baricoins if your device is lost or stolen."
-msgstr "PINプロテクションを有効にすべきです。もしあなたのデバイスを紛失した時にあなたのビットコインを守ってくれるのはPINだけです。"
+msgstr "PINプロテクションを有効にすべきです。もしあなたのデバイスを紛失した時にあなたのバリコインを守ってくれるのはPINだけです。"
 
 #: electrum/plugins/safe_t/safe_t.py:212 electrum/plugins/trezor/trezor.py:250
 msgid "You will be asked to enter 24 words regardless of your seed's actual length.  If you enter a word incorrectly or misspell it, you cannot change it or go back - you will need to start again from the beginning.\n\n"
@@ -6446,7 +6446,7 @@ msgstr "あなたのアカウントは次の場所に移動しました"
 
 #: electrum/gui/qt/password_dialog.py:256
 msgid "Your baricoins are password protected. However, your wallet file is not encrypted."
-msgstr "あなたのビットコインはパスワードで保護されていますが、ウォレットファイルは暗号化されていません。"
+msgstr "あなたのバリコインはパスワードで保護されていますが、ウォレットファイルは暗号化されていません。"
 
 #: electrum/gui/qt/main_window.py:2475 electrum/gui/kivy/main_window.py:1411
 msgid "Your channels cannot be recovered from seed, because they were created with an old version of Electrum. This means that you must save a backup of your wallet everytime you create a new channel.\n\n"
@@ -6497,7 +6497,7 @@ msgstr "接続しているサーバーは分岐したブロックチェーン上
 
 #: electrum/network.py:1011
 msgid "Your transaction is paying a fee that is so low that the baricoin node cannot fit it into its mempool. The mempool is already full of hundreds of megabytes of transactions that all pay higher fees. Try to increase the fee."
-msgstr "あなたのトランザクション支払い手数料は低すぎるため、ビットコインノードのトランザクションプール内に収まりません。トランザクションプールには既に数百メガバイトものトランザクションがあり、それらはより高額な手数料を支払おうとしています。手数料を増やしてみてください。"
+msgstr "あなたのトランザクション支払い手数料は低すぎるため、バリコインノードのトランザクションプール内に収まりません。トランザクションプールには既に数百メガバイトものトランザクションがあり、それらはより高額な手数料を支払おうとしています。手数料を増やしてみてください。"
 
 #: electrum/network.py:1020
 msgid "Your transaction is trying to replace another one in the mempool but it does not meet the rules to do so. Try to increase the fee."
